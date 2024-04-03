@@ -9,7 +9,7 @@ function AverageCalculator() {
 
   const fetchNumbers = async (numberId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/numbers/${numberId}`);
+      const response = await axios.get(`http://localhost:9876/numbers/e`);
       const { windowPrevState, windowCurrState, numbers, avg } = response.data;
       setWindowPrevState(windowPrevState);
       setWindowCurrState(windowCurrState);
